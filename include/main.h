@@ -109,14 +109,14 @@ void add_book_interactive(void);
 void search_books_interactive(void);
 void update_book_interactive(void);
 void delete_book_interactive(void);
-void list_all_books(void);
+void list_all_books_interactive(void);
 
 // 회원 관리 기능 함수들
 void add_member_interactive(void);
 void search_members_interactive(void);
 void update_member_interactive(void);
 void delete_member_interactive(void);
-void list_all_members(void);
+void list_all_members_interactive(void);
 
 // 대출 관리 기능 함수들
 void borrow_book_interactive(void);

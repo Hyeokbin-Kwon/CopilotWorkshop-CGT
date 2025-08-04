@@ -16,6 +16,7 @@
 #define MAX_PHONE_LENGTH 19
 #define MAX_ADDRESS_LENGTH 255
 #define MAX_INPUT_SIZE 1024
+#define MAX_PATH_LENGTH 512
 
 /* 대출 관련 상수 */
 #define DEFAULT_LOAN_DAYS 14
@@ -44,11 +45,5 @@
 #define QUERY_INSERT 2
 #define QUERY_UPDATE 3
 #define QUERY_DELETE 4
-
-/* 로그 레벨 */
-#define LOG_ERROR 1
-#define LOG_WARNING 2
-#define LOG_INFO 3
-#define LOG_DEBUG 4
 
 #endif // CONSTANTS_H

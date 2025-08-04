@@ -250,7 +250,7 @@ int create_directory_if_not_exists(const char *dir_path) {
     if (!dir_path) return FAILURE;
     
 #ifdef _WIN32
-    return mkdir(dir_path) == 0 || errno == EEXIST ? SUCCESS : FAILURE;
+    return _mkdir(dir_path) == 0 || errno == EEXIST ? SUCCESS : FAILURE;
 #else
     return mkdir(dir_path, 0755) == 0 || errno == EEXIST ? SUCCESS : FAILURE;
 #endif
@@ -650,7 +650,7 @@ void init_default_config(SystemConfig *config) {
     safe_string_copy(config->database_path, "library.db", sizeof(config->database_path));
     safe_string_copy(config->backup_directory, "./backups", sizeof(config->backup_directory));
     config->default_loan_days = DEFAULT_LOAN_DAYS;
-    config->max_loan_count = MAX_LOANS_PER_MEMBER;
+    config->max_loan_count = MAX_BOOKS_PER_MEMBER;
     config->max_renewal_count = MAX_RENEWAL_COUNT;
     config->auto_backup_enabled = TRUE;
     config->log_level = LOG_INFO;
