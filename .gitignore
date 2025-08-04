@@ -1,0 +1,52 @@
+# 빌드 디렉토리
+/build/
+
+# 데이터베이스 파일
+/database/*.db
+/database/*.sqlite3
+
+# 라이브러리 파일
+/lib/*.a
+/lib/*.so
+/lib/*.dll
+
+# 실행 파일
+*.exe
+library_system
+
+# 임시 파일
+*.tmp
+*.log
+
+# IDE 관련 파일
+.vscode/
+*.swp
+*.swo
+*~
+
+# 테스트 결과 파일
+*.gcda
+*.gcno
+*.gcov
+coverage.info
+coverage_html/
+
+# 패키지 파일
+/dist/
+*.tar.gz
+*.zip
+
+# Windows 특정 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS 특정 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux 특정 파일
+*~
+.fuse_hidden*
+.Trash-*
